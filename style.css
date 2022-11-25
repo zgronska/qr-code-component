@@ -1,0 +1,124 @@
+/* - Font size (paragraph): 15px
+- Mobile: 375px
+- Desktop: 1440px */
+
+/*=============================================
+=            CSS Reset            =
+=============================================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightgray: hsl(212, 45%, 89%);
+  --grayishblue: hsl(220, 15%, 55%);
+  --darkblue: hsl(218, 44%, 22%);
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*=====  End of CSS Reset  ======*/
+
+/*=============================================
+=            Styling            =
+=============================================*/
+
+body {
+  min-height: 100vh;
+  background: var(--lightgray);
+  -webkit-font-smoothing: antialiased;
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 2rem;
+}
+
+p {
+  font-weight: 400;
+  color: var(--grayishblue);
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--darkblue);
+}
+
+main {
+  background: var(--white);
+  max-width: 21rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 2rem;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 0.4rem 2rem 0;
+}
+
+.qr-code {
+  border-radius: 0.5rem;
+}
+
+.text {
+  max-width: 16.8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--grayishblue);
+  padding-bottom: 2rem;
+}
+.attribution a {
+  color: var(--darkblue);
+  text-decoration: none;
+}
+/*=====  End of Styling  ======*/
